@@ -1,6 +1,6 @@
 import {  Routes, Route ,useNavigate } from "react-router-dom";
 import { useState,useEffect } from "react";
-import Chatbot from "./components/ChatBot.jsx";
+import Chatbot from "./components/Chatbot.jsx";
 import Layout from "./components/Layout";
 import Login from "./components/Login";
 import TicketList from "./components/TicketList";
