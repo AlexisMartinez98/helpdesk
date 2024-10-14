@@ -3,7 +3,7 @@ import { useState,useEffect } from "react";
 import Layout from "./components/Layout";
 import Login from "./components/Login";
 import TicketList from "./components/TicketList";
-import Chatbot from "./components/ChatBot";
+import Chatbot from "./components/ChatBot.jsx";
 import Register from "./components/Register";
 import TicketDetail from "./components/TicketDetail";
 import { ToastContainer } from "react-toastify";
