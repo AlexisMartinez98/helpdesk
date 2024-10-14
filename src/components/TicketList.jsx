@@ -11,7 +11,7 @@ const TicketList = (isChatOpen) => {
     const fetchTickets = async () => {
       try {
         const token = localStorage.getItem("authToken");
-        const response = await axios.get("http://localhost:3000/tickets", {
+        const response = await axios.get("http://20.118.220.82:3000/tickets", {
           headers: { Authorization: `Bearer ${token}` }, 
         });
         setTickets(response.data);
