@@ -12,7 +12,7 @@ const TicketDetail = () => {
     const fetchTicketDetail = async () => {
       try {
         const token = localStorage.getItem("authToken"); // Obtener el token del almacenamiento local
-        const response = await axios.get(`http://localhost:3000/tickets/${id}`, {
+        const response = await axios.get(`http://20.118.220.82:3000/tickets/${id}`, {
           headers: { Authorization: `Bearer ${token}` }, // Incluir el token en la cabecera
         });
         const fetchedTicket = response.data;
@@ -34,7 +34,7 @@ const TicketDetail = () => {
   const handleMarkAsResolved = async () => {
     try {
       const token = localStorage.getItem("authToken");
-      await axios.put(`http://localhost:3000/tickets/update/${id}`, {
+      await axios.put(`http://20.118.220.82:3000/tickets/update/${id}`, {
         status: "cerrado",
       }, {
         headers: { Authorization: `Bearer ${token}` },
