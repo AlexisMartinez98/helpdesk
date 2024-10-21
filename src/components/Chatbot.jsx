@@ -19,7 +19,7 @@ const Chatbot = ({isChatOpen,setIsChatOpen}) => {
     try {
       const token = localStorage.getItem("authToken");
       const response = await axios.post(
-        "http://20.118.220.82:3000/chatbot",
+        "https://rypconsultores.cl/api/chatbot",
         { message },
         {
           headers: { Authorization: `Bearer ${token}` },
