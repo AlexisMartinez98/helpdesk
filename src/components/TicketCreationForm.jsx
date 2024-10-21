@@ -10,7 +10,7 @@ const TicketCreationForm = ({ addTicket }) => {
     e.preventDefault();
     try {
       const token = localStorage.getItem("authToken"); 
-      const response = await axios.post("http://20.118.220.82:3000/tickets/create", {
+      const response = await axios.post("https://rypconsultores.cl/api/tickets/create", {
         title,
         description,
       }, {

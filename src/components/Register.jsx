@@ -11,7 +11,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://20.118.220.82:3000/register", {
+      const response = await axios.post("https://rypconsultores.cl/api/register", {
         name,
         email,
         password,
